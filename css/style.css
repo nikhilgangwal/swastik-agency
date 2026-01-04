@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Navigation */
+nav {
+  background-color: #0a1a2f;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* About */
+.about {
+  background-color: white;
+  margin: 40px;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #0a1a2f;
+}
+
+/* Footer */
+footer {
+  background-color: #0a1a2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  background-color: #f4f6f8;
+  margin: 10px auto;
+  padding: 12px;
+  max-width: 400px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.brand-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.brand-card {
+  background-color: #f4f6f8;
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.brand-card h3 {
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.brand-card ul {
+  padding-left: 18px;
+}
+
+.brand-card li {
+  margin-bottom: 6px;
+}
+
+.brand-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.brand-logo {
+  max-width: 120px;
+  max-height: 60px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-detail-logo {
+  max-width: 160px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #e63946;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.contact-form button {
+  background-color: #e63946;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .menu {
+    margin-top: 10px;
+  }
+
+  nav .menu a {
+    display: block;
+    margin: 8px 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .brand-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    gap: 20px;
+  }
+
+}
+
